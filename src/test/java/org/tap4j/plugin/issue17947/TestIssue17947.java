@@ -1,12 +1,13 @@
 package org.tap4j.plugin.issue17947;
 
-import junit.framework.TestCase;
+import org.junit.jupiter.api.Test;
 
 import org.tap4j.model.TestSet;
 import org.tap4j.parser.Tap13Parser;
 
-public class TestIssue17947 extends TestCase {
+public class TestIssue17947 {
 
+    @Test
     public void testSubtestsIssue17947() {
         // tap stream provided by issue reporter
         String tap = "1..3\n" + 
